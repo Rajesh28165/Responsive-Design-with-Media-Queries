@@ -1,0 +1,41 @@
+.header {
+    height: 5rem;
+    background-color: blueviolet;
+  }
+  .footer {
+    height: 5rem;
+    width: 100%;
+    background-color: #009acb;
+  }
+  .middle {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 20px 0;
+  }
+  .item {
+    height: 30px;
+    background-color: #33b5e6;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  .content {
+    height: 100%;
+    width: 200px;
+    background-color: #33b5e6;
+  }
+  
+  @media (max-width: 480px) {
+    .middle {
+      flex-direction: column;
+      height: 550px;
+      width: 100%;
+    }
+    .item {
+      width: 100%;
+    }
+    .content {
+      height: 200px;
+      width: 100%;
+    }
+  }

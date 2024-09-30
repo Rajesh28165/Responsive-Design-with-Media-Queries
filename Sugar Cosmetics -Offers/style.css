@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color:rgb(238, 12, 50);
+}
+
+h1 span {
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px 0 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+
+.item img {
+    width:300px;
+    height:300px;
+}
+
+p {
+    text-align: end;
+    padding: 10px 5px 10px 5px;
+    border: 2.5px dotted;
+    border-radius: 5px;
+    border-color: hotpink;
+    color: deeppink;
+    font-weight: bold;
+}
+
+p span {
+    color: black;
+    margin-left: 10px;
+}

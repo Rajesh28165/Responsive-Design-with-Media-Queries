@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Box</title>
+    <style>
+      .container {
+        position: relative;
+        height: 100vh;
+      }
+      button {
+        color: white;
+        background-color: red;
+        padding: 5px 10px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .info {
+        color: rgb(255, 0, 221);
+        font-weight: bold;
+        font-size: xx-large;
+        display: none;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      button:active + .info {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button>Read Info</button>
+      <div class="info">This is info</div>
+    </div>
+  </body>
+</html>

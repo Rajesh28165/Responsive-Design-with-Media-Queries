@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.top_section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.hidden_mobile_list {
+  display: none;
+}
+
+.logo_wrapper {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01026e;
+}
+
+.section_content {
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: #3040af;
+  color: #fff;
+}
+
+.section_content p {
+  line-height: 2rem;
+}
+
+.section_content h3 {
+  padding-bottom: 1rem;
+}
+
+.bottom_section {
+  background-color: black;
+  color: white;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom_left img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.accordion_wrapper {
+  display: none;
+}
+
+a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .top_section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 480px) {
+  .top_section {
+    display: flex;
+  }
+  .section_content {
+    display: none;
+  }
+  .hidden_mobile_list {
+    display: block;
+  }
+  .accordion_wrapper {
+    display: block;
+  }
+  .dropdown_container {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active,
+  .dropdown_container:hover {
+    background-color: #b85d5d;
+  }
+
+  .dropdown_content {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  /* Accordion content styling */
+  details[open] summary {
+    background-color: #ddd;
+  }
+
+  details div {
+    padding: 10px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+}
